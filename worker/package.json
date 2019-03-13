@@ -1,0 +1,28 @@
+{
+  "name": "complex-fib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DyegoMaas/complex-fib.git"
+  },
+  "keywords": [
+    "complex",
+    "fibonacci"
+  ],
+  "author": "Dyego Maas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DyegoMaas/complex-fib/issues"
+  },
+  "homepage": "https://github.com/DyegoMaas/complex-fib#readme",
+  "dependencies": {
+    "nodemon": "^1.18.10",
+    "redis": "^2.8.0"
+  }
+}
