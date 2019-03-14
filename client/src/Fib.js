@@ -4,8 +4,8 @@ import axios from 'axios';
 class Fib extends Component {
     state = {
         seenIndices: [],
-        values = {},
-        index = ''
+        values: {},
+        index: ''
     };
 
     componentDidMount() {
@@ -40,7 +40,7 @@ class Fib extends Component {
         return this.state.seenIndices.map(({ number }) => number).join(', ');
     }
 
-    renderValues() {
+    renderSeenValues() {
         const entries = [];
 
         for (let key in this.state.values) {
