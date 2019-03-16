@@ -63,6 +63,6 @@ app.post('/values', async (req, res) => {
     res.send({ working: true });
 });
 
-app.listen(5000, () => {
-    console.log('Listening on port 5000');
+app.listen(6000, () => {
+    console.log('Listening on port 6000');
 })
