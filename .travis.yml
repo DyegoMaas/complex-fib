@@ -8,7 +8,7 @@ before_install:
 script:
   - docker run dyegomaas/react-test npm test -- --coverage
 
-after_sucess:
+after_success:
   - docker build -t dyegomaas/complex-client ./client
   - docker build -t dyegomaas/complex-server ./server
   - docker build -t dyegomaas/complex-worker ./worker
