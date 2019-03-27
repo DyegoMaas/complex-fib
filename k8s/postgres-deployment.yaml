@@ -12,8 +12,16 @@ spec: #deploy specification
       labels:
         component: postgres
     spec:
+      volumes:
+        - name: postgres-storage
+          persistentVolumeClaim:
+            claimName: database-persistent-volume-claim
       containers:
         - name: postgres
           image: postgres
           ports:
             - containerPort: 5432
+          volumeMounts:
+            - name: postgres-storage # same as volume name
+              mountPath: /var/lib/postgresql/data # postgres storage location
+              subPath: postgres # folder inside de PVC were data will actually be stored
