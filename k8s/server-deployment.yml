@@ -16,7 +16,7 @@ spec:
         - name: server
           image: dyegomaas/complex-server
           ports:
-            - containerPort: 5000
+            - containerPort: 6000
           env:
             - name: REDIS_HOST
               value: redis-cluster-ip-service

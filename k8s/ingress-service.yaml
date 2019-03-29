@@ -17,4 +17,4 @@ spec:
           - path: /api/
             backend:
               serviceName: server-cluster-ip-service
-              servicePort: 5000
+              servicePort: 6000
