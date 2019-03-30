@@ -12,7 +12,7 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Overly complex Fibonacci calculator v2.0</h1>
+            <h1 className="App-title">Overly complex Fibonacci calculator v3.0 with Kubernetes</h1>
             <Link to="/">Home</Link>
             <Link to="/otherpage">OtherPage</Link>
           </header>
